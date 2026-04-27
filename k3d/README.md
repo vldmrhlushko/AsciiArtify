@@ -1,0 +1,1 @@
+k3d cluster create aa-cl -p "8080:80@loadbalancer" --agents 1
