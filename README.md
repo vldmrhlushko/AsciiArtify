@@ -1,2 +1,2 @@
 # AsciiArtify
-AsciiArtify Іефукегз Зкщоусе
+AsciiArtify Startup Project
