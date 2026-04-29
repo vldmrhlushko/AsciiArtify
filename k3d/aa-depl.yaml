@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ascii-art-deployment
+  namespace: ascii-art-namespace
 spec:
   replicas: 2
   selector:
@@ -22,6 +23,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ascii-art-service
+  namespace: ascii-art-namespace
 spec:
   type: ClusterIP
   ports:
@@ -34,6 +36,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: ascii-art-ingress
+  namespace: ascii-art-namespace
 spec:
   rules:
   - http:

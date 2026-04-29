@@ -1,1 +1,5 @@
 k3d cluster create aa-cl -p "8080:80@loadbalancer" --agents 1
+
+k3d cluster list
+curl -L localhost:8080 | grep title
+
