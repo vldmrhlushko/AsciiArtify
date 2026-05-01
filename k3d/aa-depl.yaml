@@ -4,7 +4,7 @@ metadata:
   name: ascii-art-deployment
   namespace: ascii-art-namespace
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: ascii-art
