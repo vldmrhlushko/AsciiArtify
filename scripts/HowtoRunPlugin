@@ -1,0 +1,19 @@
+# How to run plugin
+Script named kubectl-mtop has to be copied to /usr/local/bin/ and granted execution permissions
+after that it can be run with the following syntax:
+kubectl mktop <namespace> <command> <resource>
+
+Example:
+kubectl mktop default top pods
+This will display the CPU and Memory usage of all pods in the default namespace:
+
+kubectl mktop argocd top nodes
+Resource,Namespace,Name,CPU,Memory
+nodes  argocd  fast-k01-dev  1742m  80026Mi
+nodes  argocd  fast-k02-dev  720m   68029Mi
+nodes  argocd  fast-k03-dev  770m   67496Mi
+nodes  argocd  hellout       608m   26674Mi
+nodes  argocd  km1           206m   1746Mi
+nodes  argocd  km2           123m   1976Mi
+nodes  argocd  km3           105m   2151Mi
+
